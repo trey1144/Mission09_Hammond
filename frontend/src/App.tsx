@@ -1,5 +1,5 @@
-import "./App.css"; // Import CSS styles
-import teamsData from "./CollegeBasketballTeams.json"; // Import JSON data directly from the `src` folder
+import './App.css'; // Import CSS styles
+import teamsData from './CollegeBasketballTeams.json'; // Import JSON data directly from the `src` folder
 
 // Transform the raw JSON data into a new structure
 const teamNames = teamsData.teams.map((team) => ({
@@ -10,7 +10,12 @@ const teamNames = teamsData.teams.map((team) => ({
 
 // Welcome component that displays a heading
 function Welcome() {
-  return <h1>Welcome to a list of information about all the colleges in NCAA Basketball!</h1>;
+  return (
+    <h1>
+      Welcome to a list of information about all the colleges in NCAA
+      Basketball!
+    </h1>
+  );
 }
 
 // Team component to display individual team details
